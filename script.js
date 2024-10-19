@@ -163,3 +163,20 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.style.right = '-300px';
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const orgLinksBtn = document.getElementById('org-links-btn');
+    const orgLinksDropdown = document.getElementById('org-links-dropdown');
+
+    orgLinksBtn.addEventListener('click', function() {
+        orgLinksDropdown.classList.toggle('show');
+    });
+
+    window.addEventListener('click', function(event) {
+        if (!event.target.matches('#org-links-btn')) {
+            if (orgLinksDropdown.classList.contains('show')) {
+                orgLinksDropdown.classList.remove('show');
+            }
+        }
+    });
+});
