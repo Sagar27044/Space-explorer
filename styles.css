@@ -524,34 +524,14 @@ footer {
     border: 1px solid rgba(0, 255, 255, 0.2);
     display: flex;
     flex-direction: column;
+    height:200px;
+    width:150px;
+    
 }
 
 .rocket-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 255, 255, 0.3);
-}
-
-.rocket-image {
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-
-.rocket-image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
-}
-
-.rocket-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
 .rocket-item:hover .rocket-image img {
